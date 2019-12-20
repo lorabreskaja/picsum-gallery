@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/subset-Gilroy-Medium.eot');
+    src: url('../fonts/subset-Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/subset-Gilroy-Medium.woff') format('woff'),
+        url('../fonts/subset-Gilroy-Medium.ttf') format('truetype'),
+        url('../fonts/subset-Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+    font-family: Gilroy;
+    font-weight: 500;
+    color: #858D94;
+}
+
+body {
+	margin: 20px;
+	padding: 0;
+	background: #ffffff;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.mainImg img {
+	height: 100%;
+	margin-top: 16px;
+}
+
+.mainImg {
+	width: 75%;
+	height: 565px;
+}
+
+.thumbnail {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#output {
+	max-height: 600px;
+	overflow: scroll;
+}
+
+#output p {
+	margin-top: 0;
+}
